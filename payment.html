@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="/css/pembayaran.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-17.jpg"
+    />
+
+    <script src="/js/script2.js" async></script>
+  </head>
+  <body>
+   
+    <div class="container">
+      <h1>Konfirmasi Pembayaran</h1>
+      <div class="first-row">
+        <div class="owner">
+          <h3>Nama</h3>
+          <div class="input-field">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="cvv">
+          <h3>Kode CVV</h3>
+          <div class="input-field">
+            <input type="password" />
+          </div>
+        </div>
+      </div>
+      <div class="second-row">
+        <div class="card-number">
+          <h3>Nomor Kartu Kredit Anda</h3>
+          <div class="input-field"><input type="text" /></div>
+        </div>
+      </div>
+      <div class="third-row">
+        <h3>Tanggal Kadaluarsa Kartu Kredit Anda</h3>
+        <div class="selection">
+          <div class="date">
+            <select name="months" id="months">
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+            <select name="years" id="years">
+              <option value="2020">2026</option>
+              <option value="2019">2025</option>
+              <option value="2018">2024</option>
+              <option value="2017">2023</option>
+              <option value="2016">2022</option>
+              <option value="2015">2021</option>
+            </select>
+          </div>
+          <div class="cards">
+            <img src="/images/mc.png" alt="mastercard" />
+            <img src="/images/vi.png" alt="visa" />
+            <img src="/images/pp.png" alt="paypal" />
+          </div>
+        </div>
+      </div>
+      <!--<a href="thankyou.html">Konpirmasi</a>-->
+      <div>
+        <button data-modal-target="#modal" class="checkoutBtn">Bayar</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Informasi Pelanggan</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New Order!" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required
+              />
+              <input
+                type="text"
+                name="contact"
+                placeholder="Contact Number"
+                required
+              />
+              <input id="orders" type="text" name="orders" required readonly />
+              <input id="total" type="text" name="total" required readonly />
+              <input
+                type="hidden"
+                name="_next"
+                value="thankyou.html"
+              />
+              <button type="submit" onclick="localStorage.clear();">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <hr />
+    <footer class="footer-basic">
+      <div class="social">
+        <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a
+        ><a href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a
+        ><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item"><a href="#">Login</a></li>
+        <li class="list-inline-item"><a href="about.html">Tentang Kami</a></li>
+      </ul>
+      <p class="copyright">Tugas Grup 4 © 2021</p>
+    </footer>
+  </body>
+</html>

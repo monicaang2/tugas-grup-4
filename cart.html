@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="/css/styling.css" />
+    <script src="/js/main.js" async></script>
+    <link
+      rel="shortcut icon"
+      href="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-17.jpg"
+    />
+    <title>Keranjang Belanja</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AXhFggLTkMUQDYK-NNRuhT4LouPpOWenmOM2qC00KzPJ3K0nKK9RNZC_ZHzDhv83hSnLSyCsMa1Q54BU"></script>
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <nav>
+        <h1>Keranjang Belanja Anda</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li class="cart">
+            <a href="cart.html">
+              <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="products-container">
+      <div class="product-header">
+        <h5 class="product-title">Film Yang dipesan</h5>
+        <h5 class="price">Harga</h5>
+        <h5 class="quantity">Jumlah</h5>
+        <h5 class="total">Subtotal</h5>
+      </div>
+      <div class="products"></div>
+
+      <div class="btn-container">
+        <button onclick="clearLocalStorage()" class="out-btn clearCartBtn">
+          Kosongkan Belanjaan
+        </button>
+        <br />
+        <button class="checkoutBtn" onclick="toPaymentPage();">
+          Proses Ke Pembayaran
+        </button>
+      </div>
+    </div>
+    <hr />
+    <footer class="footer-basic">
+      <div class="social">
+        <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a
+        ><a href="https://www.twitter.com/"><i class="icon ion-social-twitter"></i></a
+        ><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item"><a href="#">Login</a></li>
+        <li class="list-inline-item"><a href="about.html">Tentang Kami</a></li>
+      </ul>
+      <p class="copyright">Tugas Grup 4 © 2021</p>
+    </footer>
+  </body>
+</html>
