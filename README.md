@@ -7,3 +7,4 @@ Anggota Grup 4 Hacktiv8-Class-Blogger
 2. Damar Aisyah
 3. Lidya Fitrian
 4. Bahrul Ilmi
+5. Syahri
