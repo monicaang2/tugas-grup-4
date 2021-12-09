@@ -1,5 +1,5 @@
 # tugas-grup-4
-simple e-commerce web
+simple e-commerce web : tema entertainment
 
 Anggota Grup 4 Hacktiv8-Class-Blogger
 
